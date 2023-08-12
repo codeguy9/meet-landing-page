@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Meet landing page</title>
+</head>
+<style>
+  body {
+    font-family: Red Hat Display, sans-serif;
+    margin:0;
+    padding:0;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .section-2-titles {
+      background-image: url(assets/mobile/image-footer.jpg)
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .section-2-titles {
+      background-image: url(assets/tablet/image-footer.jpg)
+    }
+  }
+</style>
+<body>
+
+  <div class="hero-area px-4">
+    <div class="logo-space w-full ">
+      <img src="assets/logo.svg" alt="" class="mx-auto py-9">
+    </div>
+    <div class="hero-image flex">
+      <img src="assets/desktop/image-hero-left.png" alt="" class="w-1/2">
+      <div class="hero-titles text-center w-full lg:block hidden md:hidden">
+        <h1 class="pt-9 pb-4 text-3xl font-black text-blue-950 md:text-6xl lg:text-5xl">Group Chat <br>for Everyone</h1>
+        <p class="text-sm text-gray-500 pb-7 md:w-80 md:mx-auto md:text-md">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+      </div>
+      <img src="assets/desktop/image-hero-right.png" alt="" class="w-1/2">
+    </div>
+    
+    <div class="hero-titles text-center w-full lg:hidden">
+      <h1 class="pt-9 pb-4 text-3xl font-black text-blue-950 md:text-6xl">Group Chat <br>for Everyone</h1>
+      <p class="text-sm text-gray-500 pb-7 md:w-80 md:mx-auto md:text-md">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+    </div>
+    <div class="button-area flex flex-col space-y-7 pb-7 md:flex-row md:gap-6 md:justify-center">
+      <a class="mx-auto bg-cyan-600 px-5 py-3 rounded-3xl text-white md:mx-0 active:bg-cyan-200" href="#">Download <span class="text-cyan-300">v1.3</span></a>
+      <a class="mx-auto bg-violet-600 px-5 py-3 rounded-3xl text-white md:mx-0" href="#">What is it?</a>
+    </div>
+
+  </div>
+
+  <div class="section-1-label w-full text-center pt-24 pb-20">
+    <span class="font-black text-gray-300 text-xs relative 
+    before:content-[''] 
+    before:absolute 
+    before:h-20 
+    before:bg-gray-300 
+    before:w-px
+    before:left-5
+    before:bottom-12 border p-4 rounded-full">01</span>
+  </div>
+
+  <div class="section-1 px-4 ">
+    <div class="images columns-2 gap-4 space-y-4 pb-12 md:flex md:flex-row md:w-full md:px-4">
+      <img class="rounded-xl md:w-1/4" src="assets/desktop/image-woman-in-videocall.jpg" alt="">
+      <img class="rounded-xl md:w-1/4" src="assets/desktop/image-women-videochatting.jpg" alt="">
+      <img class="rounded-xl md:w-1/4" src="assets/desktop/image-men-in-meeting.jpg" alt="">
+      <img class="rounded-xl md:w-1/4" src="assets/desktop/image-man-texting.jpg" alt="">
+   </div>
+
+   <div class="section-1-titles text-center">
+     <h2 class="uppercase text-cyan-600 font-black tracking-widest pb-8">Built for modern use</h2>
+     <h3 class="pt-9 pb-4 text-3xl font-black text-blue-950">Smarter meetings,<br> all in one place</h3>
+     <p class="text-sm text-gray-500 pb-7 md:w-9/12 md:mx-auto">Send messages, share files, show your screen, and record your meetings — all in one 
+      workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+   </div>
+  </div>
+
+  <div class="section-2-label w-full text-center pt-24">
+    <span class="font-black text-gray-300 text-xs relative 
+    before:content-[''] 
+    before:absolute 
+    before:h-20 
+    before:bg-gray-300 
+    before:w-px
+    before:left-6
+    before:bottom-12 border p-4 rounded-full bg-white z-40">02</span>
+  </div>
+
+  <div class="section-2-titles bg-no-repeat bg-center w-screen h-96 bg-cover relative">
+    <div class="overlay absolute w-screen h-96 bg-cyan-600 left-0 top-0 right-0 opacity-80" ></div>
+    <div class="titles lg:flex lg:gap-28 2xl:justify-center 2xl:w-full md:left-32 z-50 text-center absolute top-32">
+      <h4 class="text-3xl pb-4 font-black text-white md:w-64 md:mx-auto lg:text-left">Experience more together</h4>
+      <p class="text-sm text-white pb-7 lg:w-96 lg:text-left">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+      <a class="bg-violet-600 px-7 py-3 rounded-3xl text-white active:bg-violet-200" href="#">Download <span class="text-violet-300">v1.3</span></a>
+    </div>
+    
+  </div>
+  
+  
+  
+
+
+</body>
+</html>
